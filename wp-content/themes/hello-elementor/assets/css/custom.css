@@ -1,0 +1,479 @@
+:root {
+    /* THEME COLOR STYLE*/
+    --primary-clr: #20317f;
+    --second-clr: #bf9f62;
+    --white-clr: #fff;
+    --text-clr: #333;
+    --hover-btn: #97783e;
+}
+* {
+    font-family: "Montserrat" sans-serif !important;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* GLOBAL */
+.link-text a {
+    color: var(--white-clr) !important;
+}
+
+/* MENU */
+.wpr-mobile-nav-menu {
+    margin-top: 30px !important;
+}
+
+/* --------------------- */
+
+/* HEADER SEARCH */
+.header-search {
+    position: relative;
+}
+.header-search:hover .header-search-main {
+    display: block;
+}
+
+.header-search-main {
+    position: absolute;
+    display: none;
+    right: 40%;
+    top: 100%;
+}
+
+.header-search-main form {
+    width: 250px;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-search-main form:before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    z-index: 3;
+    right: 10px;
+    border-bottom: 10px solid var(--primary-clr);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+/* Header breadcumb */
+.header-breadcumb {
+    color: var(--white-clr) !important;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+}
+.home .section-header-breadcumb {
+    display: none !important;
+}
+
+.header-breadcumb a {
+    color: var(--white-clr) !important;
+}
+
+/* HOME */
+.post-service-home .wpr-grid-item-below-content {
+    min-height: 86px;
+    background-color: var(--primary-clr);
+    padding: 12px 6px 12px 6px !important;
+}
+
+.post-service-home .wpr-grid-item-below-content .wpr-grid-item-title a {
+    color: var(--white-clr) !important;
+    font-weight: 600;
+    display: -webkit-box;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    line-height: 1.6rem;
+}
+
+/* FOOTER */
+.footer-info div {
+    padding: 6px 0;
+    line-height: 1.6;
+}
+
+.footer-info div i {
+    min-width: 36px;
+    font-size: 20px;
+    color: var(--primary-clr);
+    text-align: center;
+}
+
+.footer-info div a {
+    color: var(--text-clr);
+}
+
+.footer-info div a:hover {
+    color: var(--primary-clr);
+}
+
+.footer-form-email label {
+    position: relative;
+}
+
+.footer-form-email label .wpcf7-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--primary-clr);
+    color: #fff;
+    border: none;
+}
+
+.wpcf7-spinner {
+    display: none;
+}
+
+/* CONTACT FORM */
+.contact-form-main .wpcf7-submit {
+    width: 100%;
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    border: none;
+}
+
+.wpcf7-submit:hover {
+    background-color: transparent !important;
+    color: var(--primary-clr) !important;
+    border: 1px solid var(--primary-clr) !important;
+}
+
+/* LIÊN HỆ */
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    font-size: 20px;
+    width: 32px;
+}
+
+.contact-form .wpcf7-submit {
+    width: calc(100% - 90px);
+    position: relative;
+    left: 90px;
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    border: none;
+}
+
+.contact-form .wpcf7-submit:hover {
+    background-color: transparent;
+    color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
+}
+
+.contact-form-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-form-title {
+    width: 100px;
+}
+
+.contact-form-item .wpcf7-form-control-wrap,
+.contact-form-item input {
+    width: 100%;
+}
+
+/* juridical */
+.post-juridical-list .wpr-grid-item {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+.post-juridical .wpr-grid-item-below-content {
+    min-height: 90px;
+    background-color: var(--primary-clr);
+    padding: 12px 6px 20px 6px !important;
+}
+
+.post-juridical .wpr-grid-item-below-content .wpr-grid-item-title a {
+    color: var(--white-clr) !important;
+    font-weight: 600;
+    line-height: 1.5;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+}
+
+.post-juridical-list .wpr-grid-item .wpr-grid-item-inner {
+    display: flex;
+}
+
+.post-juridical-list .wpr-grid-item .wpr-grid-item-inner .wpr-grid-media-wrap {
+    flex: 1;
+    margin-right: 24px;
+}
+
+.post-juridical-list .wpr-grid-item .wpr-grid-item-inner .wpr-grid-item-below-content {
+    flex: 2;
+    padding: 0 !important;
+}
+
+.post-juridical-list .wpr-grid-item:first-child {
+    display: none;
+}
+
+/* contact form QA */
+.contact-form-QA .wpcf7-submit {
+    width: 100%;
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    padding: 8px 0;
+    border: none;
+}
+
+.contact-form-QA-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form-QA-item label {
+    width: 45% !important;
+}
+
+.qa-link {
+    color: #888888;
+}
+
+/* contact form recruitment */
+.contact-form-recruitment-item {
+    display: flex;
+}
+
+.contact-form-recruitment-item label {
+    flex: 1;
+}
+
+.contact-form-recruitment-item span {
+    flex: 3;
+}
+
+.contact-form-recruitment .wpcf7-submit {
+    width: 75%;
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    padding: 8px 0;
+    border: none;
+    position: relative;
+    left: 25%;
+}
+
+.post-recruitment-form {
+    display: none;
+}
+
+.category-tuyen-dung .post-recruitment-form {
+    display: block !important;
+}
+/* TIN TỨC */
+
+.post-list .wpr-grid-item {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+.post-juridical .wpr-grid-item-below-content {
+    min-height: 90px;
+    background-color: var(--primary-clr);
+    padding: 12px 6px 20px 6px !important;
+}
+
+.post-juridical .wpr-grid-item-below-content .wpr-grid-item-title a {
+    color: var(--white-clr) !important;
+    font-weight: 600;
+    line-height: 1.5;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+}
+
+.post-list .wpr-grid-item .wpr-grid-item-inner {
+    display: flex;
+}
+
+.post-list .wpr-grid-item .wpr-grid-item-inner .wpr-grid-media-wrap {
+    flex: 1;
+    margin-right: 24px;
+}
+
+.post-list .wpr-grid-item .wpr-grid-item-inner .wpr-grid-item-below-content {
+    flex: 2;
+    padding: 0 !important;
+}
+
+/* POST Tuyển dụng  */
+.post-date-future .elementor-shortcode {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.post-date-future {
+    display: none;
+}
+
+.category-tuyen-dung .post-date-public,
+.category-tuyen-dung .post-advise {
+    display: none !important;
+}
+
+.category-tuyen-dung .post-date-future {
+    display: block !important;
+}
+
+/* sidebar tin tức - hội thảo */
+.sidebar-post .wpr-grid-media-wrap {
+    display: none;
+}
+
+/* SOCIAL POPUP */
+.social-popup {
+    position: fixed;
+    right: 16px;
+    bottom: 90px;
+    width: 30px !important;
+}
+
+/* toast message form */
+.wpcf7 form.invalid .wpcf7-response-output {
+    display: none;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    position: fixed;
+    top: 124px;
+    right: 0;
+    z-index: 100;
+    color: #243746;
+    background: #fff;
+    padding: 20px 12px;
+    border: none;
+    border-left: 6px solid var(--primary-clr) !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 500px;
+    animation: fadeInRight linear 0.3s, fadeOut linear 1s 4s forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(calc(100% + 18px));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        display: block;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* TEAMS  */
+.team-item {
+    padding: 0 10px !important;
+}
+
+.team-item-img {
+    position: relative;
+    overflow-y: hidden;
+    padding: 0 !important;
+}
+
+.team-item-info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    /* top: 0%; */
+    left: 0;
+    overflow-y: scroll;
+    background-color: var(--white-clr);
+    color: #333 !important;
+    padding: 8px 16px;
+    transition: top 1s linear;
+    cursor: default;
+    z-index: 10000;
+}
+
+.team-item:hover .team-item-info {
+    top: 0;
+}
+
+/* .team-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, #f9f9f9 0px 0px 0px 1px;
+} */
+
+.team-item.show-info .team-item-info {
+    top: 8%;
+}
+
+.team-item-info::-webkit-scrollbar {
+    width: 2px;
+    background-color: #f5f5f5;
+}
+
+.team-item-info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+.team-item-info::-webkit-scrollbar-thumb {
+    background-color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
+}
+
+.team-item-info h1,
+.team-item-info h2,
+.team-item-info h3,
+.team-item-info h4,
+.team-item-info h5,
+.team-item-info h6 {
+    margin: 0 !important;
+}
+
+/* HỘI THẢO - HOME */
+
+.seminar .esz_post_thumb .esz_post_thumb_img {
+    object-fit: initial !important;
+}
+/* IMAGE SIZE POST */
+.post-juridical-list .wpr-grid-image-wrap img {
+    width: 100%;
+    height: 120px;
+}
+.post-service-home .wpr-grid-image-wrap img,
+.post-list .wpr-grid-image-wrap img {
+    width: 100%;
+    height: 245px;
+}
+
+.team-item img {
+    width: 100% !important;
+    height: 300px !important;
+}
